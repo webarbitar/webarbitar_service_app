@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:service_app/utils/color_utils.dart';
+import 'package:service_app/ui/components/common_styles.dart';
+import 'package:service_app/ui/utils/color_utils.dart';
 
-import 'package:service_app/models/components/common_styles.dart';
+
+
+
 
 
 void main() => runApp(MyApp());

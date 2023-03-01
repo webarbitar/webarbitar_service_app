@@ -16,11 +16,13 @@ class WelcomeImage extends StatelessWidget {
               flex: 8,
               child:  Image(image:
               AssetImage('images/logo3.jpg'),
-              height: 250,
+              height: 240,
               )
+
             ),
           ],
         ),
+
         Text(
           "Let's get started",
           style: TextStyle(fontWeight: FontWeight.bold,
@@ -28,14 +30,20 @@ class WelcomeImage extends StatelessWidget {
           ,
         ),
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Text(
             "Lorem ipsum dolor sit adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ",
-style: TextStyle( fontSize: 15,
-  height: 1.5,),
+textAlign: TextAlign.center,
+style: TextStyle(
+
+  fontSize: 13,
+  height: 1.5,
+color: Colors.grey),
           ),
         ),
-        SizedBox(height: defaultPadding * 2),
+        Icon(Icons.more_horiz_outlined,
+          size: 50,
+          color: Color(0xFFF1E6FF),),
         SizedBox(height: defaultPadding * 2),
       ],
 

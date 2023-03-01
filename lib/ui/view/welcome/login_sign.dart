@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import '../../utils/constant.dart';
 import '../login/login.dart';
 import '../signin/signup.dart';
@@ -15,40 +15,56 @@ class LoginAndSignupBtn extends StatelessWidget {
       children: [
         Hero(
           tag: "login_btn",
+          child: SizedBox(
+            height: 50,
+            width: 300,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text(
+                "Create Account", //login screen
+                style: GoogleFonts.sourceCodePro(
+                  fontSize: 15,
+                ) ,
+
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: 16),
+        SizedBox(
+          height: 50,
+          width: 300,
           child: ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return LoginScreen();
+                    return SignUpScreen();
                   },
                 ),
               );
             },
-            child: Text(
-              "create account", //login screen
-              style: TextStyle(fontSize: 19),
+            style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+              side: BorderSide(color: Color(0xFFEDE9E9)),
             ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return SignUpScreen();
-                },
-              ),
-            );
-          },
-          style: ElevatedButton.styleFrom(
-              primary: kPrimaryLightColor, elevation: 0),
-          child: Text(
-            "Login".toUpperCase(), //signup screen
-            style: TextStyle(color: Colors.black),
+            child: Text(
+              "Login", //signup screen
+              style:  GoogleFonts.sourceCodePro(
+                fontSize: 15,
+                color: Colors.black
+              ) ,
+            ),
           ),
         ),
       ],

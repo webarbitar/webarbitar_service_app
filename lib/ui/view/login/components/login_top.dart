@@ -14,6 +14,7 @@ class LoginScreenTopImage extends StatelessWidget {
       children: [
         Text(
           "step 1/5",
+          textAlign: TextAlign.start,
           style: TextStyle(fontWeight: FontWeight.bold,
             color: Color(0xFFB8A7EA)
           ),
@@ -29,18 +30,25 @@ class LoginScreenTopImage extends StatelessWidget {
         Container(
           child: Text(
             "Registration",
-            style: TextStyle(fontWeight: FontWeight.bold,
-              fontSize: 22
+
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
             ),
           )
 
         ),
         Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Text(
-            "Enter your mobile number we will send you OTP to verify later ",
-            style: TextStyle( fontSize: 11,
-              height: 1.5,),
+          child: SizedBox(
+            width: 250,
+            child: Text(
+              "Enter your mobile number we will send you OTP to verify later ",
+              textAlign: TextAlign.center,
+              style: TextStyle( fontSize: 12,
+                height: 1.5,
+              color: Colors.grey),
+            ),
           ),
         ),
         const SizedBox(height: defaultPadding),

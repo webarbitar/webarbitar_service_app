@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:service_app/ui/view/verification/verify.dart';
 import '../../../utils/constant.dart';
 class verification_f extends StatelessWidget {
@@ -22,6 +23,10 @@ class verification_f extends StatelessWidget {
               },
               child: Text(
                 "Continue",
+                style:  GoogleFonts.sourceCodePro(
+                  fontSize: 15,
+
+                ) ,
               ),
             ),
           ),

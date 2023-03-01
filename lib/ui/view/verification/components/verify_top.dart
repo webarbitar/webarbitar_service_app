@@ -35,9 +35,11 @@ class verify_top extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
-            "Enter 4 digit number ",
+            "Enter 4 digit number that has sent to your mobile number ",
+            textAlign: TextAlign.center,
             style: TextStyle( fontSize: 11,
-              height: 1.5,),
+              height: 1.5,
+            color: Colors.grey),
           ),
         ),
         const SizedBox(height: defaultPadding),
@@ -46,13 +48,13 @@ class verify_top extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: SizedBox(
             height: 60,
-            width: 50,
+            width: 150,
             child: TextField(
               // autofocus: autoFocus,
               textAlign: TextAlign.center,
               keyboardType: TextInputType.number,
               // controller: controller,
-              maxLength: 1,
+              maxLength: 4,
               cursorColor: Theme.of(context).primaryColor,
               decoration: const InputDecoration(
                   border: OutlineInputBorder(),

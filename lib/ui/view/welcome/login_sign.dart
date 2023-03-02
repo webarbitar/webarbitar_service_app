@@ -55,8 +55,7 @@ class LoginAndSignupBtn extends StatelessWidget {
               );
             },
             style: ElevatedButton.styleFrom(
-                primary: Colors.white,
-              side: BorderSide(color: Color(0xFFEDE9E9)),
+                primary: kPrimaryLightColor,elevation: 0
             ),
             child: Text(
               "Login", //signup screen

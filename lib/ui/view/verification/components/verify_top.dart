@@ -124,7 +124,7 @@ class verify_top extends StatelessWidget {
           "Re-send code in 0:30",
           style: TextStyle(
             color: Color((0xFF9C86E0)),
-              fontSize: 10)
+              fontSize: 10 )
           ,
         ),
         SizedBox(height: defaultPadding * 1),
